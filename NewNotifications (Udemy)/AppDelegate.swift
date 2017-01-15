@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UNUserNotificationCenter.current().delegate = self
+        configureUserNotifications()
+        
         return true
     }
 
@@ -41,6 +46,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    //new   (presenting the notification)
+    private func configureUserNotifications() {
+        
+        //create our actions in notification
+        let favAction = UNNotificationAction(identifier: "fistBump", title: "👊 Fist Bump" , options: [])
+        let dismissAction = UNNotificationAction(identifier: "dismiss", title: "Dismiss" , options: [])
+        
+        //set category. connected with extension info.plist
+        let category = UNNotificationCategory(identifier: "myNotificationCategory", actions: [favAction, dismissAction], intentIdentifiers: [], options: [])
+        UNUserNotificationCenter.current().setNotificationCategories([category])
+        
+        //we got this func set up.. now we need to call it
+    }
 
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        completionHandler(.alert)
+    }
+    
+    //do the processing with those actions
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void ) {
+        
+        print("Response Receive for \(response.actionIdentifier)")
+        completionHandler()
+        //we will just get what they tapped on dissmissAction or favAction
+        
+        //and this right here is where you would if you wanted to do some kind of like if its a favorite action and you could incromant a favorite counter or something like that. that's where you do this
+    }
+    
+    
 }
 

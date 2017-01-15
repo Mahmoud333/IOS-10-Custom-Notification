@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MyContentExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>NewNotifications (Udemy).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1E70E4611E25D41800B13E12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1E71DCC91E1AEC4C00463245</key>
 		<dict>
 			<key>primary</key>

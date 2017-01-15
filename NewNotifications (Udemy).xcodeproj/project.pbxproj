@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E70E45B1E25B3AF00B13E12 /* giphy_001.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1E70E45A1E25B3AF00B13E12 /* giphy_001.gif */; };
+		1E70E45D1E25B5B600B13E12 /* rick_grimes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1E70E45C1E25B5B600B13E12 /* rick_grimes.gif */; };
+		1E70E4651E25D41C00B13E12 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E70E4641E25D41B00B13E12 /* UserNotifications.framework */; };
+		1E70E4671E25D41C00B13E12 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E70E4661E25D41C00B13E12 /* UserNotificationsUI.framework */; };
+		1E70E46A1E25D41E00B13E12 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E70E4691E25D41E00B13E12 /* NotificationViewController.swift */; };
+		1E70E46D1E25D41F00B13E12 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E70E46B1E25D41F00B13E12 /* MainInterface.storyboard */; };
+		1E70E4711E25D41F00B13E12 /* MyContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E70E4621E25D41900B13E12 /* MyContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1E71DCCE1E1AEC4C00463245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71DCCD1E1AEC4C00463245 /* AppDelegate.swift */; };
 		1E71DCD01E1AEC4C00463245 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71DCCF1E1AEC4C00463245 /* ViewController.swift */; };
 		1E71DCD31E1AEC4C00463245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E71DCD11E1AEC4C00463245 /* Main.storyboard */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1E70E46F1E25D41F00B13E12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E71DCC21E1AEC4C00463245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E70E4611E25D41800B13E12;
+			remoteInfo = MyContentExtension;
+		};
 		1E71DCDF1E1AEC4D00463245 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E71DCC21E1AEC4C00463245 /* Project object */;
@@ -25,7 +39,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1E70E4751E25D41F00B13E12 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1E70E4711E25D41F00B13E12 /* MyContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1E70E45A1E25B3AF00B13E12 /* giphy_001.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy_001.gif; sourceTree = "<group>"; };
+		1E70E45C1E25B5B600B13E12 /* rick_grimes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rick_grimes.gif; sourceTree = "<group>"; };
+		1E70E4621E25D41900B13E12 /* MyContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E70E4641E25D41B00B13E12 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		1E70E4661E25D41C00B13E12 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		1E70E4691E25D41E00B13E12 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		1E70E46C1E25D41F00B13E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1E70E46E1E25D41F00B13E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E71DCCA1E1AEC4C00463245 /* NewNotifications (Udemy).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NewNotifications (Udemy).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E71DCCD1E1AEC4C00463245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E71DCCF1E1AEC4C00463245 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +75,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E70E45F1E25D41800B13E12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E70E4671E25D41C00B13E12 /* UserNotificationsUI.framework in Frameworks */,
+				1E70E4651E25D41C00B13E12 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E71DCC71E1AEC4C00463245 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +101,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E70E4631E25D41B00B13E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E70E4641E25D41B00B13E12 /* UserNotifications.framework */,
+				1E70E4661E25D41C00B13E12 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E70E4681E25D41D00B13E12 /* MyContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1E70E4691E25D41E00B13E12 /* NotificationViewController.swift */,
+				1E70E46B1E25D41F00B13E12 /* MainInterface.storyboard */,
+				1E70E46E1E25D41F00B13E12 /* Info.plist */,
+			);
+			path = MyContentExtension;
+			sourceTree = "<group>";
+		};
 		1E71DCC11E1AEC4C00463245 = {
 			isa = PBXGroup;
 			children = (
 				1E71DCCC1E1AEC4C00463245 /* NewNotifications (Udemy) */,
+				1E70E4681E25D41D00B13E12 /* MyContentExtension */,
 				1E71DCE11E1AEC4D00463245 /* NewNotifications (Udemy)Tests */,
+				1E70E4631E25D41B00B13E12 /* Frameworks */,
 				1E71DCCB1E1AEC4C00463245 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +136,7 @@
 			children = (
 				1E71DCCA1E1AEC4C00463245 /* NewNotifications (Udemy).app */,
 				1E71DCDE1E1AEC4D00463245 /* NewNotifications (Udemy)Tests.xctest */,
+				1E70E4621E25D41900B13E12 /* MyContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +150,8 @@
 				1E71DCD41E1AEC4C00463245 /* Assets.xcassets */,
 				1E71DCD61E1AEC4C00463245 /* LaunchScreen.storyboard */,
 				1E71DCD91E1AEC4C00463245 /* Info.plist */,
+				1E70E45A1E25B3AF00B13E12 /* giphy_001.gif */,
+				1E70E45C1E25B5B600B13E12 /* rick_grimes.gif */,
 			);
 			path = "NewNotifications (Udemy)";
 			sourceTree = "<group>";
@@ -99,6 +168,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1E70E4611E25D41800B13E12 /* MyContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E70E4721E25D41F00B13E12 /* Build configuration list for PBXNativeTarget "MyContentExtension" */;
+			buildPhases = (
+				1E70E45E1E25D41800B13E12 /* Sources */,
+				1E70E45F1E25D41800B13E12 /* Frameworks */,
+				1E70E4601E25D41800B13E12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyContentExtension;
+			productName = MyContentExtension;
+			productReference = 1E70E4621E25D41900B13E12 /* MyContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1E71DCC91E1AEC4C00463245 /* NewNotifications (Udemy) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E71DCE71E1AEC4D00463245 /* Build configuration list for PBXNativeTarget "NewNotifications (Udemy)" */;
@@ -106,10 +192,12 @@
 				1E71DCC61E1AEC4C00463245 /* Sources */,
 				1E71DCC71E1AEC4C00463245 /* Frameworks */,
 				1E71DCC81E1AEC4C00463245 /* Resources */,
+				1E70E4751E25D41F00B13E12 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1E70E4701E25D41F00B13E12 /* PBXTargetDependency */,
 			);
 			name = "NewNotifications (Udemy)";
 			productName = "NewNotifications (Udemy)";
@@ -144,6 +232,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Mahmoud SMGL";
 				TargetAttributes = {
+					1E70E4611E25D41800B13E12 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5PD448JSVP;
+						ProvisioningStyle = Automatic;
+					};
 					1E71DCC91E1AEC4C00463245 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 5PD448JSVP;
@@ -172,16 +265,27 @@
 			targets = (
 				1E71DCC91E1AEC4C00463245 /* NewNotifications (Udemy) */,
 				1E71DCDD1E1AEC4D00463245 /* NewNotifications (Udemy)Tests */,
+				1E70E4611E25D41800B13E12 /* MyContentExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1E70E4601E25D41800B13E12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E70E46D1E25D41F00B13E12 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E71DCC81E1AEC4C00463245 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E70E45D1E25B5B600B13E12 /* rick_grimes.gif in Resources */,
 				1E71DCD81E1AEC4C00463245 /* LaunchScreen.storyboard in Resources */,
+				1E70E45B1E25B3AF00B13E12 /* giphy_001.gif in Resources */,
 				1E71DCD51E1AEC4C00463245 /* Assets.xcassets in Resources */,
 				1E71DCD31E1AEC4C00463245 /* Main.storyboard in Resources */,
 			);
@@ -197,6 +301,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1E70E45E1E25D41800B13E12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E70E46A1E25D41E00B13E12 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E71DCC61E1AEC4C00463245 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +329,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1E70E4701E25D41F00B13E12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E70E4611E25D41800B13E12 /* MyContentExtension */;
+			targetProxy = 1E70E46F1E25D41F00B13E12 /* PBXContainerItemProxy */;
+		};
 		1E71DCE01E1AEC4D00463245 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1E71DCC91E1AEC4C00463245 /* NewNotifications (Udemy) */;
@@ -225,6 +342,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1E70E46B1E25D41F00B13E12 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E70E46C1E25D41F00B13E12 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		1E71DCD11E1AEC4C00463245 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -244,6 +369,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1E70E4731E25D41F00B13E12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5PD448JSVP;
+				INFOPLIST_FILE = MyContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mahmoud-SMGL.NewNotifications--Udemy-.MyContentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1E70E4741E25D41F00B13E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5PD448JSVP;
+				INFOPLIST_FILE = MyContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mahmoud-SMGL.NewNotifications--Udemy-.MyContentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		1E71DCE51E1AEC4D00463245 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,6 +491,7 @@
 		1E71DCE81E1AEC4D00463245 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5PD448JSVP;
 				INFOPLIST_FILE = "NewNotifications (Udemy)/Info.plist";
@@ -353,6 +505,7 @@
 		1E71DCE91E1AEC4D00463245 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5PD448JSVP;
 				INFOPLIST_FILE = "NewNotifications (Udemy)/Info.plist";
@@ -396,6 +549,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E70E4721E25D41F00B13E12 /* Build configuration list for PBXNativeTarget "MyContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E70E4731E25D41F00B13E12 /* Debug */,
+				1E70E4741E25D41F00B13E12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1E71DCC51E1AEC4C00463245 /* Build configuration list for PBXProject "NewNotifications (Udemy)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -412,6 +573,7 @@
 				1E71DCE91E1AEC4D00463245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E71DCEA1E1AEC4D00463245 /* Build configuration list for PBXNativeTarget "NewNotifications (Udemy)Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +582,7 @@
 				1E71DCEC1E1AEC4D00463245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
